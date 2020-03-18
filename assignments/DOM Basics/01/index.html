@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM Basics</title>
+  </head>
+  <body>
+    <body>
+      <h1>Document Object Model</h1>
+    <script>
+     let para = document.createElement("p");
+     para.textcontent = "Hello Javascript";
+     para.innerHTML = "I love <strong>Javascript</strong>";
+   
+    let ul = document.createElement("ul");
+    ul.innerHTML = "<li>Buy groceries</li><li>Feed the cat</li><li>Do laundry</li>";
+    let li = document.createElement("li");
+    li.textContent = "Push repo";
+    ul.append(li);
+    ul.removeChild(ul.children[1]);
+    document.body.append(para,ul);
+    </script>
+  </body>
+</html>
